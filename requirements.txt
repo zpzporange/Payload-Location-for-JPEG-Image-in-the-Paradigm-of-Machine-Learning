@@ -1,0 +1,10 @@
+joblib==1.2.0
+jpegio==0.2.8
+lightgbm==3.3.5
+mlxtend==0.21.0
+numpy==1.24.2
+PyWavelets==1.4.1
+scikit-learn==1.2.1
+scipy==1.9.1
+jpegio==0.2.2
+

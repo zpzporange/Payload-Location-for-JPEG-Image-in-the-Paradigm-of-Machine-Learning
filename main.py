@@ -6,17 +6,7 @@ and the corresponding stego-key
 Output : A location map that indicates the embedding positions in the input images,
 represented by a binary matrix with the same size as the input images
 
-Stego-key is a binary matrix with the same dimensions as the image, which determines whether a given position is an embedding position or not during the embedding process.
-A value of 0 indicates a non-embedding position (non-payload position),
-and a value of 1 indicates an embedding position (payload position).
-The relationship between the label and the stego-key needs to be clarified.
-For the three steganographic algorithms JSR, JSM, and F5,
-the DCT coefficients with zero values are illegal embedding positions.
-Since JPEG images tend to have a large number of zero coefficients,
-the label and the stego-key are almost identical when the embedding rate is low.
-However, when the embedding rate increases,
-some embedding positions specified by the stego-key may not be valid embedding positions due to the presence of zero coefficients in all images in the set.
-We mark such positions in the stego-key as 0, and we obtain the actual label.
+Stego-key is a binary matrix with the same dimensions as the image, which determines whether a given position is an embedding position or not during the embedding process.A value of 0 indicates a non-embedding position (non-payload position),and a value of 1 indicates an embedding position (payload position).
 """
 
 import gc
